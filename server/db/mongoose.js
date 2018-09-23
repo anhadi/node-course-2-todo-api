@@ -7,7 +7,8 @@ mongoose.Promise = global.Promise;
 // };
 // mongoose.connect( db.localhost || db.mlab);
 
-mongoose.connect('mongodb://annisahadi:cerulean1@ds149268.mlab.com:49268/todoapp', { useNewUrlParser: true });
+mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true });
+// mongoose.connect('mongodb://localhost:27017/TodoApp', { useNewUrlParser: true });
 
 module.exports = {mongoose};
 
