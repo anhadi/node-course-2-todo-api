@@ -8,11 +8,11 @@ const {User} = require('./../server/models/user');
 // 	console.log(result);
 // })
 
-Todo.findOneAndRemove({
-	text: 'Second test todo'
-}).then((removedTodo) => {
-	return console.log(`deleted todo: ${removedTodo}`)
-})
+// Todo.findOneAndRemove({
+// 	text: 'Second test todo'
+// }).then((removedTodo) => {
+// 	return console.log(`deleted todo: ${removedTodo}`)
+// })
 
 // Todo.findByIdAndRemove({
 // 	_id: '5ba7df73eed4a977f73c0511'
